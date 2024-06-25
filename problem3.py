@@ -1,3 +1,5 @@
+#input csv file=original_data.csv
+#output csv fille=transposed_datan.csv
 import pandas as pd
 
 

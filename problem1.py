@@ -1,3 +1,5 @@
+#input data file=data.csv
+#output data file=new_data.csv
 import csv
 def comparedates(old_date,curr_date):
     j=0
@@ -18,8 +20,10 @@ with open('data.csv','r') as csv_file:
     dict={}
     for i in lst_all:
         tup=(i[0],i[1])
+        #if the combination of (product_group_id,product_id) is unique
         if tup not in dict:
             dict[tup]=[i[2],i[3]]
+        #if the combination is duplicate so there is a need to compare dates the comparision of the dates is done comparedates function
         else:
             old_date=dict[tup][1].split('-')
             old_date_int = [int(x) for x in old_date]
