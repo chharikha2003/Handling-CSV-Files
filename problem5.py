@@ -21,7 +21,7 @@ def calculate_ytd_sales(input_date):
 
     return sum
 
-# Example usage
+
 input_date =input("Enter date : ")
 
 ytd_value=calculate_ytd_sales(input_date)
